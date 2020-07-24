@@ -16,7 +16,7 @@ public class Employee extends Human {
     
     @Override
     public void talks(String message) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println(message);
     }
     
     public void blabla() {
@@ -30,6 +30,13 @@ public class Employee extends Human {
     public void setEmpId(String empId) {
         this.empId = empId;
     }
+
+    @Override
+    public void sleeps() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+
     
     
 }

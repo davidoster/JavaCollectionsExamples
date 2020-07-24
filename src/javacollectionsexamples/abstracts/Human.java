@@ -5,11 +5,13 @@
  */
 package javacollectionsexamples.abstracts;
 
+import javacollectionsexamples.interfaces.HumanActions;
+
 /**
  *
  * @author mac
  */
-public abstract class Human {
+public abstract class Human implements HumanActions {
     public String xyz;
     private String name;
     private float age;
@@ -20,10 +22,8 @@ public abstract class Human {
     }
     
     public void walks() {
-        System.out.println("");   
+        System.out.println("I am walking");   
     }
-    
-    public abstract void talks(String message);
 
     public String getName() {
         return name;
